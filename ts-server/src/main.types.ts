@@ -5,6 +5,6 @@ export interface TRequest<T = any> extends Request {
     body: T;
 }
 
-export interface TResponse<ResBody = any> extends Express.Response {
-    send: ResBody;
+export interface TResponse<T> extends Response {
+    json: Send<T, any>;
 }
